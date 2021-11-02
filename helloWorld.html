@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript</title>
+		
+		<script>
+		function sayHello(who) {
+				document.write("Hello, " + who + "... <br>");
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			var sentence = "Hello," + " world!" + "<br>";
+			var length = sentence.length;
+			var subSentence = sentence.substring(3,7);
+			document.write(sentence + "Length: " + length + "<br>");
+			
+			var a = new Array("cat", "dog", 53, true);
+			document.write(sayHello(a[1]));
+			
+			for (i=0; i<a.length; i++){
+				document.write("a[" + i + "] : " + a[i] + "<br>");
+			}
+			
+			if (a[2] > 53) {
+				alert("Value of a[3] exceeds acceptable parameters.");
+			} else {
+				document.write("==========<br>" + "NO ERRORS<br>" + "==========<br>");
+			}
+
+			x = {"key" : "value"}
+			x.key = "value2";
+			y = JSON.stringify(x);
+
+			
+		</script>
+	</body>
+</html>
